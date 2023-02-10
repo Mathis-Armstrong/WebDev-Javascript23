@@ -88,8 +88,9 @@ img {
     
 }
 nav{
-   background-color: #356f87;
+   background-color: #4d8085;
    text-align: center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 nav a{
    color: #dddfe2;
@@ -105,7 +106,11 @@ nav li{
     font-size: 1.5em;
 }
 main{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #dddfe2;
+    color: #151a20;
+    padding-top: 1%;
+    font-size: 1.5em;
 }
 a{
     text-decoration: none;
@@ -115,4 +120,17 @@ a{
    margin-left: auto;
    margin-right: auto;
    width: 50%;
+ }
+ footer{
+   background-color: #dddfe2;
+   padding-top: 5%;
+   font-size: 0.85em;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ footer a{
+   color: #356f87;
+ }
+ footer p{
+   display: inline-block;
+   padding-left: 1%;
  }
