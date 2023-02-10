@@ -89,6 +89,7 @@ img {
 }
 nav{
    background-color: #356f87;
+   text-align: center;
 }
 nav a{
    color: #dddfe2;
@@ -99,7 +100,6 @@ nav li{
     font-size: 1.55em;
     padding-right: 2%;
     padding-left: 2%;
-    
 }
 #facts{
     font-size: 1.5em;
