@@ -53,15 +53,16 @@ ol, ul {
 
 /* page header */
 header {
-   background: #93AD78;
+   background: #151a20;
    width: 100%;
-   color: black;
+   color: #dddfe2;
    font-size: 48px;
    text-align: center;
    line-height: 1.5em;
    border-bottom: 1px solid black;
    border-left: 1px solid black;
    border-right: 1px solid black;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* main content */
@@ -81,13 +82,24 @@ article h2 {
    padding: 10px;
 }
 
-  img {
+img {
     max-width: 100%;
     display: block;
+    
 }
-
+nav{
+   background-color: #356f87;
+}
+nav a{
+   color: #dddfe2;
+}
 nav li{
     text-decoration: none;
+    display: inline-block;
+    font-size: 1.55em;
+    padding-right: 2%;
+    padding-left: 2%;
+    
 }
 #facts{
     font-size: 1.5em;
@@ -98,3 +110,9 @@ main{
 a{
     text-decoration: none;
 }
+.center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+ }
