@@ -36,6 +36,9 @@
                   document.write(homeStreet + "<br>" + homeCity+", "+homeState+" "+homeCode);
                </script>
                <input type="radio" id="homeoption" name="shippingaddr" />
+               <script>
+                  document.getElementById("homeoption").addEventListener("click", home);
+               </script>
             </label>
             <label for="workoption" id="workaddr">
                <div>Work</div>
@@ -43,6 +46,9 @@
                   document.write(workStreet + "<br>" + workCity+", "+workState+" "+workCode);
                </script>
                <input type="radio" id="workoption" name="shippingaddr" />
+               <script>
+                  document.getElementById("workoption").addEventListener("click", work);
+               </script>
             </label>
          </fieldset>
          

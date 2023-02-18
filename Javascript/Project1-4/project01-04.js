@@ -16,3 +16,16 @@ let workStreet = '15 Oak Ln.';
 let workCity = 'Central City';
 let workState = 'MA';
 let workCode = '02104';
+function work(){
+    document.getElementById("street").value=workStreet;
+    document.getElementById("city").value=workCity;
+    document.getElementById("state").value=workState;
+    document.getElementById("code").value=workCode;
+}
+
+function home(){
+    document.getElementById("street").value=homeStreet;
+    document.getElementById("city").value=homeCity;
+    document.getElementById("state").value=homeState;
+    document.getElementById("code").value=homeCode;
+}
