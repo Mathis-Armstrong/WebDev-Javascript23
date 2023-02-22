@@ -1,3 +1,4 @@
+"use strict";
 let picture = document.getElementById("pic");
 let num = document.getElementById("input");
 function changeImg(){
@@ -18,6 +19,8 @@ function changeImg(){
             picture.src = "pics/5.gif";
             break;
         default:
+            picture.src = "";
+            window.alert("Entry must be a whole number between 1 and 5");
             break;
     }
 }
