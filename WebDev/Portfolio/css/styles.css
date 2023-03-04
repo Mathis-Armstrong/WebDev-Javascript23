@@ -45,7 +45,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
    line-height: 1;
-   max-width: 960px;
    background: white;
    margin: 0 auto;
    font-family: Arial, Helvetica, sans-serif; 
@@ -62,11 +61,7 @@ header {
    color: #dddfe2;
    font-size: 48px;
    text-align: center;
-   line-height: 1.5em;
-   border-bottom: 1px solid black;
-   border-left: 1px solid black;
-   border-right: 1px solid black;
-   
+   line-height: 1.5em;   
    font-family: 'Montserrat', sans-serif;
 }
 
@@ -85,11 +80,12 @@ nav{
 }
 nav a{
    color: #dddfe2;
+   display: inline-block;
 }
 nav li{
     text-decoration: none;
     font-size: 1.55em;
-    padding: 2%;
+    padding-block: 2%;
     border-top: 2px solid #151a20;
 }
 #facts{
@@ -131,4 +127,59 @@ a{
    background-color: #289799;
    background-clip: padding-box;
    padding: 1%;
+}
+.tablet{
+   display: none;
+}
+.desktop{
+   display: none;
+}
+
+/* Tablet Media Query */
+@media screen and (min-width: 540px){
+   .mobile{
+      display: none;
+   }
+   .tablet{
+      display: block;
+   }
+   nav li{
+      display: inline;
+      padding-block: 0;
+      border: none;
+      font-size: 5.2vw;
+   }
+   nav a{
+      border-inline: .3vw solid #151a20;
+      padding-inline: 1%;
+   } 
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 1025px){
+   .mobile{
+      display: none;
+   }
+   .tablet{
+      display: none;
+   }
+   .desktop{
+      display: block;
+   }
+   nav{
+      text-align: left;
+   }
+   nav li{
+      display: inline;
+      padding-block: 0;
+      border: none;
+      font-size: 3vw;
+   }
+   nav a{
+      border-inline: none;
+      padding-inline: 1%;
+   } 
+   nav li a:hover{
+      background-color: #151a20;
+   }
 }
