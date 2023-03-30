@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Student Name: Mathis
+File Name: form.html
+Date: 03/30/2023
+--> 
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="Validation.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Mathis Armstrong</h1>
+    <h2>Portfolio</h2>
+  </header>
+  <nav>
+    <ul><li><a href="about.html">About Me</a></li> <li><a href="contact.html">Contact Me</a></li> <li><a href="grades.html">My Grades</a></li> <li><a href="form.html">Form</a></li></ul>
+  </nav>
+  <!-- Use the main area to add the main content to the webpage -->
+  <main>
+    <article>
+        <form>
+            <fieldset>
+                <h3>Check at least 1 box:</h3>
+                <input type="checkbox" id="check" name="123" value="1" >
+                <label for="check">1</label>
+                <input type="checkbox" id="check2" name="123" value="2" >
+                <label for="check2">2</label>
+                <input type="checkbox" id="check3" name="123" value="3" >
+                <label for="check3">3</label>
+                <h3>Select one:</h3>
+                <input type="radio" id="radio" name="ABC" value="A" required>
+                <label for="A">A</label>
+                <input type="radio" id="radio" name="ABC" value="B" required>
+                <label for="B">B</label>
+                <input type="radio" id="radio" name="ABC" value="C" required>
+                <label for="C">C</label>
+                <h3>Type anything here:</h3>
+                <input type="text" id="text" name="text" required>
+                <h3>Type something here witch at least 8 characters including 1 letter and 1 number:</h3>
+                <input type="text" id="text" name="text" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+                <h3></h3>
+                <input type="submit" id="submit">
+            </fieldset>
+        </form>
+	</article>
+  </main>
+  <footer>
+    <p><a href="https://mathis-armstrong.github.io/WebDev-Javascript23" title="Home">Home Page</a></p>
+    <p>Email me at: <a href="mailto:mathis.armstrong.2@student.prcc.edu">mathis.armstrong.2@student.prcc.edu</a></p>
+</footer>
+</body>
+</html>

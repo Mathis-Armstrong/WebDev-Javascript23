@@ -5,10 +5,10 @@ Date: 02/09/2023
 */
 
 /* apply a natural box layout model to all elements DDDFE2
-289799
-356F87
-4D8085
-151A20*/
+#289799
+#356F87
+#4D8085
+#151A20*/
 * {
    -moz-box-sizing: border-box;
    -webkit-box-sizing: border-box;
@@ -66,10 +66,12 @@ header {
 }
 
 /* main content */
+/* Updated this */
 img {
     margin-left: auto;
     margin-right: auto;
-    display: block;    
+    display: block;
+    box-shadow: 5px 10px;
 }
 nav{
    background-color: #4d8085;
@@ -120,6 +122,29 @@ a{
  main p{
    text-align: center;
  }
+ /* Updated this */
+ figcaption{
+   text-align: center;
+   padding: 2%;
+ }
+ table{
+   margin-left: auto;
+   margin-right: auto;
+   border-collapse: collapse;
+   width: 50%;
+ }
+ th{
+   background-color: #356f87;
+   color: #dddfe2;
+ }
+ td, th{
+   border: #151a20 solid 2px;
+   padding: 1%;
+   text-align: center;
+ }
+ tr:nth-child(odd){
+   background-color: lightgrey;
+ }
  .rounded{
    max-width: 50%;
    border: 0px solid;
@@ -127,6 +152,11 @@ a{
    background-color: #289799;
    background-clip: padding-box;
    padding: 1%;
+}
+/* Updated this */
+.grid{
+   display: grid;
+   grid-template-columns: auto auto auto;
 }
 .tablet{
    display: none;
