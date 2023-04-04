@@ -49,7 +49,7 @@ check5.addEventListener("click", function() {
 });
 
 submit.addEventListener("click", function(){
-    if(!check.checked&&!check2.checked&&!check3.checked){
+    if(selections.length<1){
         check.setCustomValidity("Check at least 1 box.");
     }
     else if(radio.validity.valueMissing){
