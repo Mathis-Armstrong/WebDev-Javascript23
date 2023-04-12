@@ -15,11 +15,12 @@ Date: 01/20/2023
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Mathis Armstrong</h1>
-    <h2>Portfolio</h2>
+  <header id="header">
+    <h1><a href="index.html">Mathis Armstrong</a></h1>
+    <h2><a href="index.html">Portfolio</a></h2>
   </header>
-  <nav>
+  <a class="burger" onclick="hamburger()">&#9776;</a>
+  <nav id="navbar">
     <ul><li><a href="about.html">About Me</a></li> <li><a href="contact.html">Contact Me</a></li> <li><a href="grades.html">My Grades</a></li> <li><a href="form.html">Form</a></li></ul>
   </nav>
   <!-- Use the main area to add the main content to the webpage -->
@@ -37,6 +38,11 @@ Date: 01/20/2023
       <img src="images/mathis.jpg" alt="picture of Mathis Armstrong" class="rounded">
       <figcaption>My mission statement</figcaption>
       </figure>
+      <audio controls src="media/Scarlet Moon Records - Indivisible (Original Game Soundtrack) - 61 Girl of Destiny.mp3">
+        <source src="media/Scarlet Moon Records - Indivisible (Original Game Soundtrack) - 61 Girl of Destiny.mp3" type="audio/mp3">
+        <source src="media/Scarlet Moon Records - Indivisible (Original Game Soundtrack) - 61 Girl of Destiny.wav" type="audio/wav">
+        <p>Your browser does not support this content.</p>
+      </audio>
       <p>&#9888;This website is currently under construction&#9888;</p>
     </article>
   </main>
@@ -44,5 +50,6 @@ Date: 01/20/2023
     <p><a href="https://mathis-armstrong.github.io/WebDev-Javascript23" title="Home">Home Page</a></p>
     <p>Email me at: <a href="mailto:mathis.armstrong.2@student.prcc.edu">mathis.armstrong.2@student.prcc.edu</a></p>
 </footer>
+<script src="scripts/script.js"></script>
 </body>
 </html>

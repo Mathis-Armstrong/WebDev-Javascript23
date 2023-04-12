@@ -63,10 +63,10 @@ header {
    text-align: center;
    line-height: 1.5em;   
    font-family: 'Montserrat', sans-serif;
+   padding-top: .6em;
 }
 
 /* main content */
-/* Updated this */
 img {
     margin-left: auto;
     margin-right: auto;
@@ -76,7 +76,7 @@ img {
 nav{
    background-color: #4d8085;
    text-align: center;
-   display: block;
+   display: none;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
@@ -102,6 +102,7 @@ main{
 }
 a{
     text-decoration: none;
+    color: #dddfe2;
 }
 .center {
    text-align: center;
@@ -165,6 +166,19 @@ a{
    display: none;
 }
 
+a.burger{
+   position: absolute;
+   top: 0;
+   color: #dddfe2;
+   font-size: 3em;
+}
+
+audio{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
 /* Tablet Media Query */
 @media screen and (min-width: 540px){
    .mobile{
@@ -173,16 +187,6 @@ a{
    .tablet{
       display: block;
    }
-   nav li{
-      display: inline;
-      padding-block: 0;
-      border: none;
-      font-size: 5.2vw;
-   }
-   nav a{
-      border-inline: .3vw solid #151a20;
-      padding-inline: 1%;
-   } 
 }
 
 /* Desktop Media Query */
@@ -196,8 +200,12 @@ a{
    .desktop{
       display: block;
    }
+   a.burger{
+      display: none;
+   }
    nav{
       text-align: left;
+      display: block;
    }
    nav li{
       display: inline;
@@ -211,5 +219,6 @@ a{
    } 
    nav li a:hover{
       background-color: #151a20;
+      transform: scale(1.2,1.2);
    }
 }
