@@ -179,6 +179,13 @@ audio{
    margin-right: auto;
 }
 
+/* Social media icons style */
+footer img{
+   display: inline-block;
+   width: 3em;
+   box-shadow: none;
+}
+
 /* Tablet Media Query */
 @media screen and (min-width: 540px){
    .mobile{
