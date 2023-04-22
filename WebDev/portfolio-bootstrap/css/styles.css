@@ -1,0 +1,14 @@
+ /*  
+Author: Mathis Armstrong
+Date: 04/21/2023
+*/
+
+footer p{
+    display: inline-block;
+}
+footer img{
+    width: 5%;
+}
+table{
+    margin: 1%;
+}
